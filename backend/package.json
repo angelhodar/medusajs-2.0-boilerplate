@@ -16,7 +16,7 @@
     "build": "medusa build && node ./script/postbuild.js",
     "seed": "medusa exec ./src/scripts/seed.ts",
     "seed:once": "init-backend",
-    "migrate": medusa db:setup --db medusa",
+    "migrate": "medusa db:setup --db medusa",
     "start": "npm run migrate && medusa start --verbose",
     "dev": "medusa develop"
   },
