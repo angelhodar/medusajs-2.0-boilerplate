@@ -17,7 +17,7 @@
     "seed": "medusa exec ./src/scripts/seed.ts",
     "seed:once": "init-backend",
     "migrate": medusa db:setup --db medusa",
-    "start": "medusa start --verbose",
+    "start": "npm run migrate && medusa start --verbose",
     "dev": "medusa develop"
   },
   "dependencies": {
